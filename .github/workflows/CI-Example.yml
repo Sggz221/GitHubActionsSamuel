@@ -1,11 +1,12 @@
 name: CI-Example
 
 on: 
+  workflow-dispatch:
+
   push:
     branches: [main]
   pull_request:
     branches: [main]
-  workflow-dispatch:
 
 jobs:
   build:
