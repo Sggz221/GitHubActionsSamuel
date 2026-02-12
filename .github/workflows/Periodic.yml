@@ -3,7 +3,7 @@ name: Periodic
 on:
   workflow-dispatch:
   schedule:
-    - cron: '*/2 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   periodic:
