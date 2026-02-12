@@ -1,0 +1,15 @@
+name: Periodic
+
+on:
+  workflow-dispatch:
+  schedule:
+    - cron: '*/2 * * * *'
+
+jobs:
+  periodic:
+    name: Periodic
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Periodic
+        steps: echo 'Mensaje automatico'

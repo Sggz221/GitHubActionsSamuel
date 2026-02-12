@@ -1,0 +1,25 @@
+name: CI-Example
+
+on: 
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
+        run: echo "Compilando..."
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: echo "Testeando..."
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy
+        run: echo "Desplegando..."
+ 
